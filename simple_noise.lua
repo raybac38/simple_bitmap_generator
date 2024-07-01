@@ -1,7 +1,16 @@
 
+if arg[3] == nil then
+	print(arg[0] .. " <size_x> <size_y> <name>")
+	return
+end
+
+
 IO_module = require "bitmap_IO"
 
 image = {}
+
+
+image["format"] = 1
 
 size = {}
 size.x = arg[1]
